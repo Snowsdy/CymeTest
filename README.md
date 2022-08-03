@@ -45,3 +45,46 @@ Once the JAR file is built, you can run it using
 - Find Add-ons at [vaadin.com/directory](https://vaadin.com/directory).
 - Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
 - Report issues, create pull requests in [GitHub](https://github.com/vaadin/platform).
+
+---
+
+# Instagram4j
+
+---
+
+## Requirements
+This project depends on
+- Java 8+
+- okhttpclient
+- okhttpclient url connection
+- jackson data-bind
+- jackson annotations
+- slf4j-api
+- apache commons codec
+
+## Quick Usage
+**Login:**
+```java
+IGClient client = IGClient.builder()
+        .username("username")
+        .password("password")
+        .login();
+```
+
+---
+# Goal of this test
+The goal was to get all single photo in a Instagram's account and list them in a grid.
+
+## What I do
+I made a function in the `main` which can get all the single photo of an IG's account.
+The next step would be to put the list of images in the grid, 
+but I don't have the best conditions and the time to do it...
+The frontend was generated thanks to Vaadin's Framework, 
+with a login connection which I would have liked to use to get the username and the password and put them
+directly in a class which would have called the IGCLient and got all the photo before loading them in the grid.
+
+## Environment
+- IDE : IntelliJ IDEA Community Edition
+- Java version : 17
+- Maven
+- Ubuntu 22.04 LTS
